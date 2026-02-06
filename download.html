@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="en"><head>  <meta charset="UTF-8">  <title>Download – China vs Cryptocurrency</title>  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>    body {      font-family: Arial, sans-serif;      background: #020617;      color: #e5e7eb;      display: flex;      align-items: center;      justify-content: center;      height: 100vh;      text-align: center;    }    .box {      max-width: 500px;      padding: 40px;      background: #020617;      border: 1px solid #1e293b;      border-radius: 10px;    }    a.download {      display: inline-block;      margin-top: 20px;      padding: 14px 28px;      background: #22c55e;      color: #000;      text-decoration: none;      font-weight: bold;      border-radius: 6px;    }  </style></head><body>
+<div class="box" id="content">  Checking payment status...</div>
+<script>const paid = sessionStorage.getItem("paymentSuccess");
+if (paid === "true") {  document.getElementById("content").innerHTML = `    <h2>Payment Successful </h2>    <p>Your download is ready.</p>
+    <a class="download"       href="https://drive.google.com/uc?export=download&id=11IRGaAnkzk-XSayNeGsaMKuMCNldDWaY"       target="_blank">       Download eBook    </a>
+    <p style="margin-top:20px;font-size:13px;">      For support: motsoenengnapo66@gmail.com    </p>  `;} else {  document.getElementById("content").innerHTML = `    <h2>Access Denied </h2>    <p>You must complete payment first.</p>    <a href="index.html" style="color:#38bdf8;">Go back to payment page</a>  `;}</script>
+</body></html>
